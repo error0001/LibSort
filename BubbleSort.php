@@ -48,6 +48,30 @@ class Sort
         return $my_array;
     }
 
+    public function Shaker($values)
+    {
+        if (empty($values)) {
+            return;
+        }
+        $left = 0;
+        $right = count($values) - 1;
+        while ($left <= $right) {
+            for ($i = $right; $i > $left; --$i) {
+                if ($values[$i - 1] > $values[$i]) {
+                    list($values[$i - 1], $values[$i]) = array($values[$i], $values[$i - 1]);
+                }
+            }
+            ++$left;
+            for ($i = $left; $i < $right; ++$i) {
+                if ($values[$i] > $values[$i + 1]) {
+                    list($values[$i], $values[$i + 1]) =  array($values[$i + 1], $values[$i]);
+                }
+            }
+            --$right;
+        }
+        return $values;
+    }
+
     public function Log($value)
     {
         var_dump($value);
