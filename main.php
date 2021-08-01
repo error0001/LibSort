@@ -8,4 +8,5 @@ $Sort->Log("\nOriginal Array :\n");
 $Sort->Log(implode(', ',$array));
 $Sort->Log("\nSorted Array:\n");
 //$Sort->Log(implode(', ',$Sort->Bubble($array, 1)));
-$Sort->Log(implode(', ',$Sort->Shaker($array)));
+//$Sort->Log(implode(', ',$Sort->Shaker($array)));
+$Sort->Log(implode(', ',$Sort->Comb($array)));
