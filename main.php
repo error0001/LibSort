@@ -1,6 +1,6 @@
 <?php
 set_time_limit(1000);
-require_once 'BubbleSort.php';
+require_once 'MySorts.php';
 $Sort = new Sort;
 $array = $Sort->CreateRandomArray(0, 100);
 
