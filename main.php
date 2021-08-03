@@ -9,4 +9,6 @@ $Sort->Log(implode(', ',$array));
 $Sort->Log("\nSorted Array:\n");
 //$Sort->Log(implode(', ',$Sort->Bubble($array, 1)));
 //$Sort->Log(implode(', ',$Sort->Shaker($array)));
-$Sort->Log(implode(', ',$Sort->Comb($array)));
+//$Sort->Log(implode(', ',$Sort->Comb($array)));
+//$Sort->Log(implode(', ',$Sort->Insertion($array)));
+$Sort->Log(implode(', ',$Sort->Selection($array)));
